@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muafiqa Imran | Full-Stack Developer Portfolio</title>
+  <style>
+    :root {
+      --navy: #0b1c36;
+      --navy-light: #132b52;
+      --white: #ffffff;
+      --gray: #cbd5e1;
+      --accent: #abccf0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", sans-serif; }
+    body { background: var(--navy); color: var(--white); line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    header { display: flex; justify-content: space-between; align-items: center; padding: 20px 60px; position: sticky; top: 0; background: var(--navy-light); z-index: 100; }
+    header h1 { font-size: 24px; font-weight: 700; color: var(--accent); }
+    nav a { margin-left: 30px; font-size: 14px; opacity: 0.85; transition: opacity 0.3s; }
+    nav a:hover { opacity: 1; color: var(--accent); }
+
+    .hero { min-height: 80vh; display: flex; align-items: center; justify-content: center; padding: 60px; text-align: center; }
+    .hero h2 { font-size: 42px; margin-bottom: 15px; }
+    .hero span { color: var(--accent); }
+    .hero p { max-width: 800px; margin: auto; color: var(--gray); }
+    .btn { display: inline-block; margin-top: 25px; padding: 12px 34px; border-radius: 30px; background: var(--accent); color: var(--white); font-weight: 600; transition: 0.3s; }
+    .btn:hover { opacity: 0.9; }
+
+    section { padding: 80px 60px; }
+    .section-title { text-align: center; font-size: 32px; margin-bottom: 40px; color: var(--accent); }
+    .about { max-width: 900px; margin: auto; text-align: center; color: var(--gray); }
+
+    .skills, .projects { max-width: 1000px; margin: auto; }
+    .skill { margin-bottom: 25px; }
+    .skill span { font-size: 14px; display: block; margin-bottom: 5px; }
+    .bar { background: var(--navy-light); border-radius: 20px; overflow: hidden; }
+    .bar div { height: 10px; background: var(--accent); width: 0; transition: 1s; }
+
+    .projects .project { background: var(--navy-light); padding: 25px; border-radius: 14px; margin-bottom: 25px; }
+    .project h4 { margin-bottom: 8px; color: var(--accent); }
+    .project p { color: var(--gray); font-size: 14px; }
+
+    footer { text-align: center; padding: 30px; font-size: 14px; color: var(--gray); }
+
+    @media(max-width:768px){
+      header{flex-direction:column}
+      nav{margin-top:15px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Muafiqa Imran</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Full-Stack <span>Developer</span></h2>
+    <p>
+      Motivated and detail-oriented aspiring Full-Stack Developer with hands-on experience in HTML, CSS, JavaScript, Python, PHP, C#, Java, Next.js, React, and SQL. Passionate about building responsive web apps, scalable e-commerce platforms, and full-stack solutions.
+    </p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
+
+<section id="about">
+  <h3 class="section-title">About Me</h3>
+  <div class="about">
+    I develop functional and responsive websites and applications through academic, freelance, and personal projects. I focus on UI/UX, clean code, and performance optimization while continuously learning modern web technologies to become a versatile full-stack developer.
+  </div>
+</section>
+
+<section id="skills">
+  <h3 class="section-title">Technical Skills</h3>
+  <div class="skills">
+    <div class="skill"><span>HTML</span><div class="bar"><div data-width="95%"></div></div></div>
+    <div class="skill"><span>CSS</span><div class="bar"><div data-width="90%"></div></div></div>
+    <div class="skill"><span>JavaScript</span><div class="bar"><div data-width="85%"></div></div></div>
+    <div class="skill"><span>React.js / Next.js</span><div class="bar"><div data-width="80%"></div></div></div>
+    <div class="skill"><span>PHP</span><div class="bar"><div data-width="95%"></div></div></div>
+    <div class="skill"><span>Python</span><div class="bar"><div data-width="70%"></div></div></div>
+    <div class="skill"><span>Java</span><div class="bar"><div data-width="65%"></div></div></div>
+    <div class="skill"><span>C#</span><div class="bar"><div data-width="75%"></div></div></div>
+    <div class="skill"><span>MySQL / SQL Server</span><div class="bar"><div data-width="94%"></div></div></div>
+    <div class="skill"><span>GitHub</span><div class="bar"><div data-width="75%"></div></div></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h3 class="section-title">Projects</h3>
+  <div class="projects">
+
+    <div class="project">
+      <h4>Velvet Vogue – E-Commerce Website</h4>
+      <p>Fashion e-commerce platform built using HTML, CSS, PHP, and MySQL. Focused on responsive UI/UX design and database-driven product management.</p>
+    </div>
+
+    <div class="project">
+      <h4>Employee Leave Management System</h4>
+      <p>Developed using C# and MySQL with separate Admin and Employee portals to manage leave requests efficiently.</p>
+    </div>
+
+    <div class="project">
+      <h4>Doctor Channeling System</h4>
+      <p>Java-based system using queue and linked list data structures to simulate real-world patient appointment handling.</p>
+    </div>
+
+    <div class="project">
+      <h4>American Safety Showcase Website</h4>
+      <p>Responsive corporate website built with HTML, CSS, and JavaScript to showcase safety products and services.</p>
+    </div>
+
+    <div class="project">
+      <h4>Dream Book Shop – Python CLI Application</h4>
+      <p>Command-line bookstore management system developed with Python and SQL Server integration, managing inventory and sales with data validation.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h3 class="section-title">Contact</h3>
+  <div class="about">
+    <p>📞 +94 75 426 6535</p>
+    <p>✉️ imranmuafiqa@gmail.com</p>
+    <p>📍 Colombo 10, Sri Lanka</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Muafiqa Imran · Full-Stack Developer Intern
+</footer>
+
+<script>
+  document.querySelectorAll('.bar div').forEach(bar => {
+    bar.style.width = bar.dataset.width;
+  });
+</script>
+
+</body>
+</html>
